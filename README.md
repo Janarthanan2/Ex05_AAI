@@ -53,8 +53,6 @@ for z in measurements:
     kf.predict()
     kf.update(np.array([z]))
     est_states.append(kf.x)
-    
-plt.plot([s[0] for s in est_states],label="BY RICHARDSON")
 plt.plot([s[0] for s in truestates],label="true")
 plt.plot([s[0] for s in est_states],label="Estimate")
 plt.legend()
@@ -62,9 +60,10 @@ plt.show()
 ```
 
 
-<H5>Output:</H5>
+<H3>Output:</H3>
 
-<img width=40% src="https://github.com/user-attachments/assets/de0f83e2-53f6-4d9d-9bca-10e36c58e138" />
+<img src="https://github.com/user-attachments/assets/c0b2949a-b1d6-45c7-b1c2-e2aed44cfaf7" width=50%>
+
 
 
 <H3>Results:</H3>
